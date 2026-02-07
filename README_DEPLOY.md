@@ -47,3 +47,5 @@ npm start
 
 Live demo
 - After deploying frontend (Vercel) and backend (Render) and configuring the rewrite, share the Vercel URL as the live demo.
+
+Note: Pushing commits to `main` will trigger the GitHub Actions workflows to deploy the frontend and backend when repository secrets are configured.
