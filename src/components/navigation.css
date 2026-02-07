@@ -1,0 +1,42 @@
+.navigation-container1 {
+  display: contents;
+}
+ 
+.navigation-thq-navigation-notification-dot-elm {
+  top: 6px;
+  right: 6px;
+  width: 8px;
+  border: 2px solid var(--color-surface);
+  height: 8px;
+  position: absolute;
+  border-radius: 50%;
+  background-color: #e74c3c;
+}
+ 
+.navigation-thq-navigation-avatar-elm {
+  width: 36px;
+  height: 36px;
+  display: block;
+  object-fit: cover;
+  border-radius: var(--border-radius-full);
+}
+ 
+.navigation-thq-navigation-progress-fill-elm {
+  width: 75%;
+}
+ 
+.navigation-container2 {
+  display: none;
+}
+ 
+.navigation-container3 {
+  display: contents;
+}
+ 
+.navigation-container4 {
+  display: none;
+}
+ 
+.navigation-container5 {
+  display: contents;
+}

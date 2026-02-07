@@ -1,0 +1,19 @@
+# Render service manifest (template)
+# Replace `repo` with your repo URL and update `branch` if needed.
+# See https://render.com/docs/render-manifest for details.
+services:
+  - type: web_service
+    name: cloud-backend
+    env: node
+    plan: free
+    repo: https://github.com/yourname/your-repo
+    branch: main
+    buildCommand: npm install
+    startCommand: npm run start:server
+    envVars:
+      - key: FRONTEND_URL
+        value: https://your-frontend-url.vercel.app
+      - key: NODE_ENV
+        value: production
+      - key: CORS_ORIGIN
+        value: https://your-frontend-url.vercel.app

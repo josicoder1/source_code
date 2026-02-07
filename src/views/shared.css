@@ -1,0 +1,35 @@
+.shared-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.shared-main {
+  flex: 1 0 auto;
+  padding: 36px 24px;
+  background: var(--color-surface);
+  color: var(--color-on-surface);
+}
+.shared-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.shared-title {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+.shared-subtitle {
+  color: var(--color-on-surface-secondary);
+  margin-bottom: 20px;
+}
+.shared-list {
+  display: grid;
+  gap: 12px;
+}
+.shared-card {
+  background: var(--color-surface-2, rgba(255,255,255,0.02));
+  border: 1px solid var(--color-border);
+  padding: 12px 16px;
+  border-radius: 8px;
+}
+.shared-card__name { font-weight: 600 }
+.shared-card__by { display:block; color: var(--color-on-surface-secondary); font-size: 13px }

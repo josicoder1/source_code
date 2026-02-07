@@ -1,0 +1,9 @@
+.recent-page { min-height: 100vh; display:flex; flex-direction:column }
+.recent-main { flex:1;padding:36px 24px;background:var(--color-surface);color:var(--color-on-surface) }
+.recent-inner { max-width:1100px;margin:0 auto }
+.recent-list { display:grid; gap:12px; margin-top:16px }
+.activity-item{ display:flex; gap:12px; align-items:flex-start; padding:12px; border-radius:8px; background:var(--color-surface-2, rgba(255,255,255,0.02)); border:1px solid var(--color-border) }
+.activity-item__header { display:flex; gap:12px; align-items:center }
+.activity-item__user { font-weight:600 }
+.activity-item__time { color:var(--color-on-surface-secondary); font-size:13px }
+.activity-item__text { margin-top:6px }

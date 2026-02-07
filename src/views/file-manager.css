@@ -1,0 +1,148 @@
+.file-manager-container1 {
+  width: 100%;
+  display: block;
+  min-height: 100vh;
+}
+ 
+.file-manager-thq-workspace-headerprogress-fill-elm {
+  width: 75%;
+}
+ 
+.file-manager-thq-sidebar-navstorage-fill-elm {
+  width: 82%;
+}
+ 
+.file-manager-thq-action-overlayicon-box-elm1 {
+  padding: var(--spacing-sm);
+  border-radius: var(--border-radius-md);
+}
+ 
+.file-manager-thq-action-overlayicon-box-elm2 {
+  padding: var(--spacing-sm);
+  border-radius: var(--border-radius-md);
+}
+ 
+.file-manager-thq-action-overlayicon-box-elm3 {
+  padding: var(--spacing-sm);
+  border-radius: var(--border-radius-md);
+}
+ 
+.file-manager-thq-action-overlayicon-box-elm4 {
+  padding: var(--spacing-sm);
+  border-radius: var(--border-radius-md);
+}
+ 
+.file-manager-thq-activity-itemhighlight-elm1 {
+  color: var(--color-primary);
+  font-weight: var(--font-weight-medium);
+}
+ 
+.file-manager-thq-activity-itemhighlight-elm2 {
+  color: var(--color-primary);
+  font-weight: var(--font-weight-medium);
+}
+ 
+.file-manager-thq-activity-itemhighlight-elm3 {
+  color: var(--color-primary);
+  font-weight: var(--font-weight-medium);
+}
+ 
+.file-manager-thq-activity-itemhighlight-elm4 {
+  color: var(--color-primary);
+  font-weight: var(--font-weight-medium);
+}
+ 
+.file-manager-container2 {
+  display: none;
+}
+ 
+.file-manager-container3 {
+  display: contents;
+}
+ 
+.file-manager-container4 {
+  display: none;
+}
+ 
+.file-manager-container5 {
+  display: contents;
+}
+ 
+.file-manager-container6 {
+  right: 50px;
+  border: 1px solid #ffffff5c;
+  bottom: 30px;
+  display: flex;
+  z-index: 22;
+  position: fixed;
+  box-shadow: 5px 5px 10px 0px rgba(31, 31, 31, 0.4);
+  min-height: auto;
+  align-items: center;
+  padding-top: 8px;
+  padding-left: 12px;
+  border-radius: 8px;
+  padding-right: 12px;
+  padding-bottom: 8px;
+  backdrop-filter: blur(6px);
+  background-color: rgba(41, 41, 41, 0.41);
+}
+ 
+.file-manager-icon213 {
+  width: 24px;
+  margin-right: 4px;
+}
+ 
+.file-manager-text36 {
+  color: white;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+/* File manager upload modal */
+.fm-modal-overlay {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  /* subtle tinted overlay using primary + dark */
+  background: linear-gradient(180deg, rgba(40,116,222,0.06), rgba(0,0,0,0.36));
+  backdrop-filter: blur(6px);
+}
+.fm-modal-card {
+  background: var(--color-surface, #fff);
+  color: var(--color-on-surface, #111);
+  padding: 20px;
+  width: 520px;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(8,24,48,0.32);
+  border: 1px solid rgba(255,255,255,0.06);
+}
+.fm-modal-header {
+  margin: 0 0 6px 0;
+}
+.fm-modal-sub {
+  margin: 0 0 12px 0;
+  color: var(--color-on-surface-secondary, #64748b);
+  font-size: 13px;
+}
+.fm-modal-actions { margin-top: 16px; display:flex; justify-content:flex-end; gap:8px }
+
+/* Drag preview badges in empty-state */
+.empty-drag-preview { display:flex; gap:8px; flex-wrap:wrap; margin-top:12px }
+.empty-drag-badge { background: rgba(40,116,222,0.08); color: var(--color-primary); padding:6px 8px; border-radius:6px; font-size:13px; border:1px solid rgba(40,116,222,0.12) }
+
+/* card hover text color (applies globally to file-card elements) */
+.file-card .file-card__name,
+.file-card .file-card__meta {
+  transition: color 140ms ease;
+}
+.file-card:hover .file-card__name {
+  color: var(--color-primary, #276ef1);
+}
+.file-card:hover .file-card__meta {
+  color: var(--color-on-surface-secondary, rgba(0,0,0,0.6));
+}

@@ -1,0 +1,147 @@
+nohup: ignoring input
+DynamoDB helpers loaded
+S3 helpers loaded
+(node:154069) Warning: NodeDeprecationWarning: The AWS SDK for JavaScript (v3) will
+no longer support Node.js v18.19.1 in January 2026.
+
+To continue receiving updates to AWS services, bug fixes, and security
+updates please upgrade to a supported Node.js LTS version.
+
+More information can be found at: https://a.co/c895JFp
+(Use `node --trace-warnings ...` to show where the warning was created)
+Server listening on http://localhost:4001
+GET /api/health {}
+GET /api/auth/me {}
+GET /api/files?path= {}
+GET /api/auth/me {}
+GET /favicon.ico {}
+GET /login {}
+GET /api/files?path= {}
+GET /login {}
+GET /login {}
+GET /login {}
+GET /login {}
+GET /login {}
+GET /login {}
+GET /login {}
+GET /login {}
+GET /login {}
+GET /login {}
+GET /login {}
+GET /login {}
+GET /login {}
+GET /login {}
+GET /login {}
+GET /login {}
+GET /login {}
+GET /login {}
+GET /login {}
+GET /api/auth/me {}
+GET /api/files?path= {}
+GET /api/auth/me {}
+GET /api/files?path= {}
+GET /favicon.ico {}
+GET /login {}
+GET /login {}
+GET /login {}
+GET /login {}
+GET /login {}
+GET /login {}
+GET /login {}
+GET /login {}
+GET /login {}
+GET /login {}
+GET /login {}
+GET /login {}
+GET /login {}
+GET /login {}
+GET /login {}
+GET /login {}
+GET /login {}
+GET /login {}
+GET /login {}
+GET /login {}
+GET /api/auth/me {}
+GET /api/files?path= {}
+GET /api/auth/me {}
+GET /api/files?path= {}
+GET /favicon.ico {}
+GET /favicon.ico {}
+GET /favicon.ico {}
+POST /api/auth/login { username: 'user', password: 'password', role: 'admin' }
+GET /api/auth/me {}
+GET /api/files?path= {}
+GET /api/auth/me {}
+GET /api/files?path= {}
+GET /favicon.ico {}
+GET /api/auth/me {}
+GET /api/files?path= {}
+GET /api/auth/me {}
+GET /api/files?path= {}
+GET /favicon.ico {}
+POST /api/files/upload {}
+GET /api/auth/me {}
+GET /api/files?path= {}
+GET /api/files?path= {}
+GET /api/auth/me {}
+GET /api/auth/me {}
+GET /api/files?path= {}
+GET /api/files?path= {}
+GET /favicon.ico {}
+GET /favicon.ico {}
+POST /api/auth/signup { username: 'naol', email: 'naol', password: '2222' }
+GET /favicon.ico {}
+GET /api/auth/me {}
+GET /api/auth/me {}
+GET /api/admin/users {}
+GET /api/admin/users/public {}
+GET /api/auth/me {}
+GET /api/auth/me {}
+GET /api/auth/me {}
+GET /api/files?path= {}
+GET /api/files?path= {}
+POST /api/auth/signup { username: 'yoseph', email: 'bdb@gmail.com', password: '12345' }
+GET /api/auth/me {}
+GET /api/auth/me {}
+GET /api/admin/users {}
+GET /api/admin/users/public {}
+POST /api/auth/login { username: 'user', password: 'password', role: 'admin' }
+GET /api/auth/me {}
+GET /api/auth/me {}
+GET /api/files?path= {}
+GET /api/files?path= {}
+POST /api/files/upload {}
+GET /api/files?path= {}
+POST /api/files/upload {}
+GET /api/files?path= {}
+POST /api/folders { name: 'sbbnsn', parentPath: '' }
+GET /api/files?path= {}
+DELETE /api/files?path=test-upload2.txt {}
+GET /api/files?path= {}
+DELETE /api/files?path=CH-3%20virtualization.pptx {}
+GET /api/files?path= {}
+DELETE /api/files?path=test-upload2.txt {}
+GET /api/files?path= {}
+DELETE /api/files?path=test-upload2.txt {}
+GET /api/files?path= {}
+DELETE /api/files?path=test-upload2.txt {}
+GET /api/files?path= {}
+DELETE /api/files?path=test-upload2.txt {}
+GET /api/files?path= {}
+DELETE /api/files?path=test-upload2.txt {}
+GET /api/files?path= {}
+DELETE /api/files?path=example.txt {}
+GET /api/files?path= {}
+DELETE /api/files?path=test-upload2.txt {}
+GET /api/files?path= {}
+GET /api/auth/me {}
+GET /api/trash {}
+POST /api/trash/restore { path: 'test-upload2.txt' }
+GET /api/trash {}
+POST /api/trash/restore { path: 'jo_swe_internship_cv.pdf' }
+GET /api/trash {}
+POST /api/trash/restore { path: 'example.txt' }
+GET /api/trash {}
+POST /api/trash/empty {}
+GET /api/trash {}
+Hangup

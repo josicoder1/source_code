@@ -1,0 +1,42 @@
+{
+    "TableDescription": {
+        "AttributeDefinitions": [
+            {
+                "AttributeName": "userId",
+                "AttributeType": "S"
+            },
+            {
+                "AttributeName": "fileId",
+                "AttributeType": "S"
+            }
+        ],
+        "TableName": "Files",
+        "KeySchema": [
+            {
+                "AttributeName": "userId",
+                "KeyType": "HASH"
+            },
+            {
+                "AttributeName": "fileId",
+                "KeyType": "RANGE"
+            }
+        ],
+        "TableStatus": "ACTIVE",
+        "CreationDateTime": "2026-01-19T02:33:54.267000+03:00",
+        "ProvisionedThroughput": {
+            "LastIncreaseDateTime": "1970-01-01T03:00:00+03:00",
+            "LastDecreaseDateTime": "1970-01-01T03:00:00+03:00",
+            "NumberOfDecreasesToday": 0,
+            "ReadCapacityUnits": 0,
+            "WriteCapacityUnits": 0
+        },
+        "TableSizeBytes": 0,
+        "ItemCount": 0,
+        "TableArn": "arn:aws:dynamodb:ddblocal:000000000000:table/Files",
+        "BillingModeSummary": {
+            "BillingMode": "PAY_PER_REQUEST",
+            "LastUpdateToPayPerRequestDateTime": "2026-01-19T02:33:54.267000+03:00"
+        },
+        "DeletionProtectionEnabled": false
+    }
+}

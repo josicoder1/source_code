@@ -1,0 +1,29 @@
+[
+  {
+    "id": "admin",
+    "username": "admin",
+    "salt": "1cdee62240d964748d76340b80ed2cd5",
+    "hash": "ca57fee606071d890bca72c0f22bc7505f9b10f2d783e7522520ead38fba292386ed633d39c18049b5c169aaaa6d38f22d93e82f6aa7f4c0f4642d06f86b047b",
+    "role": "admin",
+    "email": "admin@example.com",
+    "active": true
+  },
+  {
+    "id": "mkk28h3yllztkuk",
+    "username": "joban",
+    "salt": "b696b2d092ac3f7bbfd823a2d6a21dcd",
+    "hash": "3902dcccb594bd2c9e7465e9517cfe7d7b61657ebe52e7fc7a5769caf8ff4c189d444ceda9c525941a8ac516930e7c0d31ecfa8ad61c180215c0fc92c48f6a13",
+    "role": "user",
+    "email": "yosa@gmail.com",
+    "active": true
+  },
+  {
+    "id": "mkk2eoo5m2mx5di",
+    "username": "mon",
+    "salt": "3d5f88e7e005e44a78db4da54ea9a079",
+    "hash": "669e5a000940d29c8ca1df0ce90f75d59ea3bddb293a0136a27c334abd16cf2105e9830890c44d47e42445531f9a1d186976d4288566c795508d668f6c1c6026",
+    "role": "user",
+    "email": "eee@gmail.com",
+    "active": true
+  }
+]

@@ -1,0 +1,118 @@
+.trash-main{padding:28px 40px}
+.trash-header h1{margin:0 0 6px}
+.trash-list{margin-top:18px}
+.trash-empty{padding:24px;background:#fff;border:1px dashed #eee;border-radius:8px;color:#666}
+.trash-table{width:100%;border-collapse:collapse;background:#fff}
+.trash-table th,.trash-table td{padding:12px 10px;border-bottom:1px solid #f2f2f2;text-align:left}
+.trash-name{display:flex;gap:8px;align-items:center}
+.trash-preview-link{margin-left:8px;font-size:12px;color:var(--color-primary)}
+.trash-actions{display:flex;gap:8px}
+
+/* Improve file-card layout when shown on the Trash page: keep icon, info, and actions on one row */
+.file-showcase__grid .file-card {
+	display: grid;
+	grid-template-columns: 56px 1fr auto;
+	gap: 12px;
+	align-items: center;
+}
+.file-showcase__grid .file-card .file-card__icon {
+	margin-bottom: 0; /* icon sits inline now */
+}
+.file-showcase__grid .file-card .file-card__info {
+	align-items: flex-start;
+	min-width: 0; /* allow truncation */
+	overflow: hidden;
+}
+.file-showcase__grid .file-card .btn {
+	white-space: nowrap;
+}
+
+/* Targeted actions container for consistent alignment */
+.file-card__actions {
+	display: flex;
+	gap: 8px;
+	align-items: center;
+	justify-self: end; /* push actions to the right column */
+}
+
+/* ensure actions sit above long filenames and have reserved space */
+.file-card__actions {
+	min-width: 140px;
+	z-index: 5;
+}
+
+.file-card {
+	overflow: visible; /* allow actions to be visible */
+}
+
+.file-card__info .file-card__name {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+/* Responsive: stack actions below info on narrow screens */
+@media (max-width: 720px) {
+	.file-showcase__grid .file-card {
+		grid-template-columns: 56px 1fr;
+	}
+	.file-card__actions {
+		grid-column: 1 / -1;
+		justify-self: start;
+		margin-top: 8px;
+	}
+}
+
+/* Empty Trash button styling */
+.empty-trash-btn {
+	margin-left: 8px;
+}
+
+/* Mobile: show as floating action button for easy access */
+@media (max-width: 720px) {
+	.empty-trash-btn {
+		position: fixed;
+		bottom: 16px;
+		right: 16px;
+		z-index: 1200;
+		padding: 12px 16px;
+		border-radius: 999px;
+		box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+		background: var(--color-danger, #d9534f);
+		color: white;
+		border: 1px solid rgba(255,255,255,0.12);
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+	}
+	/* Slightly reduce size on very small screens */
+	@media (max-width: 420px) {
+		.empty-trash-btn { padding: 10px 12px; bottom: 12px; right: 12px }
+	}
+}
+
+/* Hover/focus styles for the floating Empty Trash button */
+.empty-trash-btn:hover,
+.empty-trash-btn:focus {
+	transform: translateY(-2px);
+	box-shadow: 0 10px 24px rgba(0,0,0,0.18);
+	filter: brightness(0.95);
+	outline: none;
+}
+
+/* Also trigger the button hover when hovering the header area (larger hover boundary) */
+.file-showcase__header:hover .empty-trash-btn {
+	transform: translateY(-2px);
+	box-shadow: 0 10px 24px rgba(0,0,0,0.18);
+	filter: brightness(0.95);
+}
+
+/* Add subtle border and hover state for file cards */
+.file-card {
+	transition: border-color 160ms ease;
+	border: 1px solid transparent;
+	background-clip: padding-box;
+}
+.file-card:hover {
+	border-color: #f6c84c; /* yellow border on hover */
+}
