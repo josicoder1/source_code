@@ -1,0 +1,19 @@
+FROM node:18-alpine
+
+WORKDIR /app
+
+# Install production dependencies only
+COPY package.json package-lock.json* ./
+RUN npm ci --only=production
+
+# Copy app sources
+COPY . .
+
+ENV NODE_ENV=production
+ENV PORT=4001
+
+EXPOSE 4001
+
+VOLUME ["/app/uploads"]
+
+CMD ["node", "server/index.js"]

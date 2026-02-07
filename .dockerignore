@@ -1,0 +1,10 @@
+node_modules
+.git
+build/static/js/*.map
+build/static/css/*.map
+npm-debug.log
+Dockerfile*
+docker-compose.prod.yml
+tmp-upload-test.txt
+tmp-upload-test2.txt
+uploads

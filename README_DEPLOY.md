@@ -49,3 +49,22 @@ Live demo
 - After deploying frontend (Vercel) and backend (Render) and configuring the rewrite, share the Vercel URL as the live demo.
 
 Note: Pushing commits to `main` will trigger the GitHub Actions workflows to deploy the frontend and backend when repository secrets are configured.
+
+Single-host Docker deployment
+1) Build and start services using `docker-compose.prod.yml`:
+
+```bash
+docker compose -f docker-compose.prod.yml build
+docker compose -f docker-compose.prod.yml up -d
+```
+
+2) Frontend will be available at `http://<host>/` and backend at `http://<host>:4001`.
+
+3) To persist uploads, the `uploads` volume is mounted for the backend. To access container logs:
+
+```bash
+docker compose -f docker-compose.prod.yml logs -f backend
+docker compose -f docker-compose.prod.yml logs -f frontend
+```
+
+Environment variables for production can be set in the `docker-compose.prod.yml` file or via a `.env` referenced from the compose file.
