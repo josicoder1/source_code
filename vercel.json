@@ -3,6 +3,12 @@
   "builds": [
     { "src": "package.json", "use": "@vercel/static-build", "config": { "distDir": "build" } }
   ],
+  "rewrites": [
+    {
+      "source": "/api/:path*",
+      "destination": "https://<your-render-service>.onrender.com/api/:path*"
+    }
+  ],
   "routes": [
     { "src": "/(.*)", "dest": "/index.html" }
   ]
