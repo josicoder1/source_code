@@ -1,4 +1,4 @@
-# Mock App
+# Cloud based file storage App
 
 Quick start
 
